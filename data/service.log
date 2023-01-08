@@ -1,0 +1,307 @@
+2023-01-08 21:04:15,132 num rows for train: 5233
+2023-01-08 21:04:16,662 best_score 0.86106
+2023-01-08 21:08:15,037 table raw_rent_messages created
+2023-01-08 21:08:19,831 data loaded to raw_rent_messages
+2023-01-08 21:08:19,835 current rows in table: 6542
+2023-01-08 21:08:19,844 App initialized
+2023-01-08 21:08:19,856 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 21:08:19,856 [33mPress CTRL+C to quit[0m
+2023-01-08 21:08:49,498 172.26.0.1 - - [08/Jan/2023 21:08:49] "GET /messages HTTP/1.1" 200 -
+2023-01-08 21:09:04,094 172.26.0.1 - - [08/Jan/2023 21:09:04] "GET /messages HTTP/1.1" 200 -
+2023-01-08 21:10:04,210 172.26.0.1 - - [08/Jan/2023 21:10:04] "GET /messages/5041 HTTP/1.1" 200 -
+2023-01-08 21:10:04,283 172.26.0.1 - - [08/Jan/2023 21:10:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-01-08 21:12:15,570 172.26.0.1 - - [08/Jan/2023 21:12:15] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 21:38:47,633 num rows for train: 5233
+2023-01-08 21:38:48,995 best_score 0.86106
+2023-01-08 21:39:12,876 New best_score 0.90000
+2023-01-08 21:39:12,877 Difference 0.03894
+2023-01-08 21:46:02,601 table raw_rent_messages created
+2023-01-08 21:46:02,627 current rows in table: 6542
+2023-01-08 21:46:02,632 App initialized
+2023-01-08 21:46:02,642 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 21:46:02,642 [33mPress CTRL+C to quit[0m
+2023-01-08 21:46:16,105 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 54, in feed
+    model,vectorizer = load_model(conf.model_path)
+  File "/srv/src/service.py", line 22, in load_model
+    loaded_model, loaded_vectorizer = pickle.load(open(model_path,'rb'))
+NameError: name 'pickle' is not defined
+2023-01-08 21:46:16,132 172.26.0.1 - - [08/Jan/2023 21:46:16] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 21:46:20,428 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 54, in feed
+    model,vectorizer = load_model(conf.model_path)
+  File "/srv/src/service.py", line 22, in load_model
+    loaded_model, loaded_vectorizer = pickle.load(open(model_path,'rb'))
+NameError: name 'pickle' is not defined
+2023-01-08 21:46:20,430 172.26.0.1 - - [08/Jan/2023 21:46:20] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 21:46:28,767 172.26.0.1 - - [08/Jan/2023 21:46:28] "[33mGET /messages/ HTTP/1.1[0m" 404 -
+2023-01-08 21:48:39,259 table raw_rent_messages created
+2023-01-08 21:48:39,265 current rows in table: 6542
+2023-01-08 21:48:39,270 App initialized
+2023-01-08 21:48:39,280 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 21:48:39,280 [33mPress CTRL+C to quit[0m
+2023-01-08 21:48:46,576 172.26.0.1 - - [08/Jan/2023 21:48:46] "[33mGET /messages/ HTTP/1.1[0m" 404 -
+2023-01-08 21:48:47,926 172.26.0.1 - - [08/Jan/2023 21:48:47] "[33mGET /messages/ HTTP/1.1[0m" 404 -
+2023-01-08 21:49:09,252 172.26.0.1 - - [08/Jan/2023 21:49:09] "GET /messages HTTP/1.1" 200 -
+2023-01-08 21:49:28,870 172.26.0.1 - - [08/Jan/2023 21:49:28] "GET /messages/2382 HTTP/1.1" 200 -
+2023-01-08 21:49:47,269 172.26.0.1 - - [08/Jan/2023 21:49:47] "GET /messages/3211 HTTP/1.1" 200 -
+2023-01-08 21:50:19,241 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 58, in feed
+    all_msgs = np.array([{'msg_id': i[0], 'msg_txt': i[1]} for i in db.get_all_messages()])
+AttributeError: 'MessagesDB' object has no attribute 'get_all_messages'
+2023-01-08 21:50:19,245 172.26.0.1 - - [08/Jan/2023 21:50:19] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 21:56:00,449 table raw_rent_messages created
+2023-01-08 21:56:00,454 current rows in table: 6542
+2023-01-08 21:56:00,460 App initialized
+2023-01-08 21:56:00,469 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 21:56:00,470 [33mPress CTRL+C to quit[0m
+2023-01-08 21:56:12,897 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 52, in feed
+    all_msgs = np.array([{'msg_id': i[0], 'msg_txt': i[1]} for i in db.get_all_messages()])
+AttributeError: 'MessagesDB' object has no attribute 'get_all_messages'
+2023-01-08 21:56:12,902 172.26.0.1 - - [08/Jan/2023 21:56:12] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 21:56:14,607 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 52, in feed
+    all_msgs = np.array([{'msg_id': i[0], 'msg_txt': i[1]} for i in db.get_all_messages()])
+AttributeError: 'MessagesDB' object has no attribute 'get_all_messages'
+2023-01-08 21:56:14,608 172.26.0.1 - - [08/Jan/2023 21:56:14] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 21:58:43,142 table raw_rent_messages created
+2023-01-08 21:58:43,147 current rows in table: 6542
+2023-01-08 21:58:43,153 App initialized
+2023-01-08 21:58:43,163 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 21:58:43,163 [33mPress CTRL+C to quit[0m
+2023-01-08 21:58:53,595 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 55, in feed
+    msg_csr = vec_model.transform(preprocess(np.array([msg['txt']])))
+NameError: name 'vec_model' is not defined
+2023-01-08 21:58:53,598 172.26.0.1 - - [08/Jan/2023 21:58:53] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 21:58:55,301 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 55, in feed
+    msg_csr = vec_model.transform(preprocess(np.array([msg['txt']])))
+NameError: name 'vec_model' is not defined
+2023-01-08 21:58:55,302 172.26.0.1 - - [08/Jan/2023 21:58:55] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 22:01:31,272 table raw_rent_messages created
+2023-01-08 22:01:31,278 current rows in table: 6542
+2023-01-08 22:01:31,284 App initialized
+2023-01-08 22:01:31,295 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 22:01:31,295 [33mPress CTRL+C to quit[0m
+2023-01-08 22:02:02,976 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 55, in feed
+    msg_csr = vectorizer.transform(preprocess(np.array([msg['txt']])))
+NameError: name 'vectorizer' is not defined
+2023-01-08 22:02:02,979 172.26.0.1 - - [08/Jan/2023 22:02:02] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 22:02:04,125 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 55, in feed
+    msg_csr = vectorizer.transform(preprocess(np.array([msg['txt']])))
+NameError: name 'vectorizer' is not defined
+2023-01-08 22:02:04,127 172.26.0.1 - - [08/Jan/2023 22:02:04] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 22:04:40,777 table raw_rent_messages created
+2023-01-08 22:04:40,782 current rows in table: 6542
+2023-01-08 22:04:40,788 App initialized
+2023-01-08 22:04:40,798 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 22:04:40,798 [33mPress CTRL+C to quit[0m
+2023-01-08 22:04:57,060 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 56, in feed
+    msg_csr = vectorizer.transform(preprocess(np.array([msg['txt']])))
+NameError: name 'preprocess' is not defined
+2023-01-08 22:04:57,062 172.26.0.1 - - [08/Jan/2023 22:04:57] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 22:04:59,255 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 56, in feed
+    msg_csr = vectorizer.transform(preprocess(np.array([msg['txt']])))
+NameError: name 'preprocess' is not defined
+2023-01-08 22:04:59,257 172.26.0.1 - - [08/Jan/2023 22:04:59] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 22:09:47,197 table raw_rent_messages created
+2023-01-08 22:09:47,202 current rows in table: 6542
+2023-01-08 22:09:47,208 App initialized
+2023-01-08 22:09:47,218 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 22:09:47,218 [33mPress CTRL+C to quit[0m
+2023-01-08 22:10:08,717 Exception on /feed/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask_restful/__init__.py", line 271, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/src/service.py", line 56, in feed
+    msg_csr = vectorizer.transform(preprocess(np.array([msg['txt']])))
+  File "/srv/src/utils.py", line 95, in preprocess
+    proc_msgs = th.remove_digits(proc_msgs)
+NameError: name 'th' is not defined
+2023-01-08 22:10:08,720 172.26.0.1 - - [08/Jan/2023 22:10:08] "[35m[1mGET /feed/ HTTP/1.1[0m" 500 -
+2023-01-08 22:13:01,577 table raw_rent_messages created
+2023-01-08 22:13:01,582 current rows in table: 6542
+2023-01-08 22:13:01,589 App initialized
+2023-01-08 22:13:01,600 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 22:13:01,600 [33mPress CTRL+C to quit[0m
+2023-01-08 22:13:33,774 172.26.0.1 - - [08/Jan/2023 22:13:33] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 22:14:11,400 172.26.0.1 - - [08/Jan/2023 22:14:11] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 22:41:28,196 table raw_rent_messages created
+2023-01-08 22:41:28,201 current rows in table: 6542
+2023-01-08 22:41:28,207 App initialized
+2023-01-08 22:41:28,217 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.4:5000
+2023-01-08 22:41:28,217 [33mPress CTRL+C to quit[0m
+2023-01-08 22:42:00,014 172.26.0.1 - - [08/Jan/2023 22:42:00] "GET /messages HTTP/1.1" 200 -
+2023-01-08 22:42:08,056 172.26.0.1 - - [08/Jan/2023 22:42:08] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 22:42:18,736 172.26.0.1 - - [08/Jan/2023 22:42:18] "[32mGET /feed HTTP/1.1[0m" 308 -
+2023-01-08 22:43:05,427 172.26.0.1 - - [08/Jan/2023 22:43:05] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 22:43:13,278 172.26.0.1 - - [08/Jan/2023 22:43:13] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 22:46:16,426 172.26.0.1 - - [08/Jan/2023 22:46:16] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 22:46:41,590 172.26.0.1 - - [08/Jan/2023 22:46:41] "GET /feed/ HTTP/1.1" 200 -
+2023-01-08 22:47:06,478 172.26.0.1 - - [08/Jan/2023 22:47:06] "GET /feed/?limit=5 HTTP/1.1" 200 -
+2023-01-08 22:51:35,834 172.26.0.1 - - [08/Jan/2023 22:51:35] "GET /feed/?limit=2 HTTP/1.1" 200 -
